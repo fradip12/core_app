@@ -20,3 +20,8 @@ lib/src/shared/l10n/app_localizations.dart
 *.freezed.dart
 *.g.dart
 *.gr.dart
+.flutter-plugins
+ios/Podfile.lock
+l10n/
+devtools_options.yaml
+ios/Runner.xcodeproj/project.pbxproj
