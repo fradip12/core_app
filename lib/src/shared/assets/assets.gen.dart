@@ -20,6 +20,38 @@ class $AssetsIconsGen {
   /// File path: assets/icons/ic-error.svg
   SvgGenImage get icError => const SvgGenImage('assets/icons/ic-error.svg');
 
+  /// File path: assets/icons/ic-nav-home-active.svg
+  SvgGenImage get icNavHomeActive =>
+      const SvgGenImage('assets/icons/ic-nav-home-active.svg');
+
+  /// File path: assets/icons/ic-nav-home.svg
+  SvgGenImage get icNavHome =>
+      const SvgGenImage('assets/icons/ic-nav-home.svg');
+
+  /// File path: assets/icons/ic-nav-notification-active.svg
+  SvgGenImage get icNavNotificationActive =>
+      const SvgGenImage('assets/icons/ic-nav-notification-active.svg');
+
+  /// File path: assets/icons/ic-nav-notification.svg
+  SvgGenImage get icNavNotification =>
+      const SvgGenImage('assets/icons/ic-nav-notification.svg');
+
+  /// File path: assets/icons/ic-nav-profile-active.svg
+  SvgGenImage get icNavProfileActive =>
+      const SvgGenImage('assets/icons/ic-nav-profile-active.svg');
+
+  /// File path: assets/icons/ic-nav-profile.svg
+  SvgGenImage get icNavProfile =>
+      const SvgGenImage('assets/icons/ic-nav-profile.svg');
+
+  /// File path: assets/icons/ic-nav-referral-active.svg
+  SvgGenImage get icNavReferralActive =>
+      const SvgGenImage('assets/icons/ic-nav-referral-active.svg');
+
+  /// File path: assets/icons/ic-nav-referral.svg
+  SvgGenImage get icNavReferral =>
+      const SvgGenImage('assets/icons/ic-nav-referral.svg');
+
   /// File path: assets/icons/ic-success.svg
   SvgGenImage get icSuccess => const SvgGenImage('assets/icons/ic-success.svg');
 
@@ -27,7 +59,19 @@ class $AssetsIconsGen {
   SvgGenImage get icWarning => const SvgGenImage('assets/icons/ic-warning.svg');
 
   /// List of all assets
-  List<SvgGenImage> get values => [icError, icSuccess, icWarning];
+  List<SvgGenImage> get values => [
+        icError,
+        icNavHomeActive,
+        icNavHome,
+        icNavNotificationActive,
+        icNavNotification,
+        icNavProfileActive,
+        icNavProfile,
+        icNavReferralActive,
+        icNavReferral,
+        icSuccess,
+        icWarning
+      ];
 }
 
 class $AssetsImagesGen {

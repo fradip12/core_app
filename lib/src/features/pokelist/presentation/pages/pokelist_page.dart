@@ -32,9 +32,6 @@ class _PokeListPageState extends State<PokeListPage> {
     return BlocProvider(
       create: (context) => bloc,
       child: Scaffold(
-        appBar: AppBar(
-          title: const Text('PokeList Page'),
-        ),
         body: BlocBuilder<PokelistBloc, PokelistState>(
           builder: (context, state) {
             final List<PokeModels> pokes = state.maybeWhen(

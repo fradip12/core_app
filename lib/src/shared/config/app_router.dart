@@ -6,7 +6,12 @@ class AppRouter extends RootStackRouter {
   @override
   List<AutoRoute> get routes {
     return [
-      AutoRoute(path: '/pokelist', page: PokeListRoute.page, initial: true),
+      AutoRoute(path: '/', page: RootRoute.page, initial: true, children: [
+        AutoRoute(path: 'home', page: PokeListRoute.page),
+        AutoRoute(path: 'samples', page: SampleRoute.page),
+        RedirectRoute(path: '*', redirectTo: 'home'),
+        RedirectRoute(path: '', redirectTo: 'home'),
+      ]),
       // Add more routes later.
     ];
   }
