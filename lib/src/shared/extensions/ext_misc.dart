@@ -1,16 +1,15 @@
-import 'package:core_app/src/shared/l10n/app_localizations.dart';
-import 'package:core_app/src/shared/l10n/app_localizations_en.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:intl/intl.dart';
 
+import '../../../l10n/app_localizations.dart';
 import '../assets/assets.gen.dart';
 import '../assets/colors.gen.dart';
 
 extension MiscX on BuildContext {
   AppLocalizations get l10n {
-    return AppLocalizations.of(this) ?? AppLocalizationsEn();
+    return AppLocalizations.of(this);
   }
 }
 

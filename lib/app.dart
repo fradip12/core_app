@@ -1,7 +1,8 @@
-import 'package:core_app/src/shared/config/app_router.dart';
-import 'package:core_app/src/shared/extensions/ext_theme.dart';
-import 'package:core_app/src/shared/l10n/app_localizations.dart';
+import 'src/shared/config/app_router.dart';
+import 'src/shared/extensions/ext_theme.dart';
 import 'package:flutter/material.dart';
+
+import 'l10n/app_localizations.dart';
 
 class CoreApp extends StatefulWidget {
   const CoreApp({super.key});

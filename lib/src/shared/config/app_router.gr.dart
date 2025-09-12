@@ -14,17 +14,17 @@ import 'package:core_app/src/features/pokelist/presentation/pages/pokelist_page.
     as _i1;
 
 /// generated route for
-/// [_i1.PokeList]
-class PokeList extends _i2.PageRouteInfo<void> {
-  const PokeList({List<_i2.PageRouteInfo>? children})
-      : super(PokeList.name, initialChildren: children);
+/// [_i1.PokeListPage]
+class PokeListRoute extends _i2.PageRouteInfo<void> {
+  const PokeListRoute({List<_i2.PageRouteInfo>? children})
+    : super(PokeListRoute.name, initialChildren: children);
 
-  static const String name = 'PokeList';
+  static const String name = 'PokeListRoute';
 
   static _i2.PageInfo page = _i2.PageInfo(
     name,
     builder: (data) {
-      return const _i1.PokeList();
+      return const _i1.PokeListPage();
     },
   );
 }
