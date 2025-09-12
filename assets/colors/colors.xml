@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--  Purple Check Colors Tokens -->
+    <color name="primary">#9747D6</color>
+    <color name="gray20">#ECEEF2</color>
+    <color name="gray40">#D5D9E2</color>
+    <color name="gray60">#8695AA</color>
+    <color name="disabled">#B1BBC8</color>
+    <color name="error">#EF4444</color>
+</resources>
