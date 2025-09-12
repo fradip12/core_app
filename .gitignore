@@ -11,3 +11,12 @@ pubspec.lock
 core_app.iml
 build/
 .flutter-plugins-dependencies
+lib/src/shared/l10n/app_localizations_en.dart
+lib/src/shared/l10n/app_localizations.dart
+
+
+# Generated Codes
+*.config.dart
+*.freezed.dart
+*.g.dart
+*.gr.dart
