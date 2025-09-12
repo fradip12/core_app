@@ -1,0 +1,13 @@
+# Folder Structure
+.fvm/
+.idea/
+.fvmrc
+.metadata
+.vscode
+.dart_tool
+
+# Flutter Config
+pubspec.lock
+core_app.iml
+build/
+.flutter-plugins-dependencies
