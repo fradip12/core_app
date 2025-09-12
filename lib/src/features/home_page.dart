@@ -1,7 +1,7 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 
-import '../data/models/poke/poke_types_enum.dart';
+import '../shared/assets/colors.gen.dart';
 import '../shared/components/displays/global_app_search_bar.dart';
 import '../shared/components/interactive/global_category_card.dart';
 import '../shared/components/wrapper/global_scaffold_wrapper.dart';
@@ -46,20 +46,20 @@ class HomePage extends StatelessWidget {
               children: [
                 GlobalCategoryCard(
                   title: 'Pokedex',
-                  color: AppColors.teal,
+                  color: ColorName.teal,
                   onPressed: () => context.navigateTo(const PokelistRoute()),
                 ),
                 const GlobalCategoryCard(
                   title: 'Moves',
-                  color: AppColors.red,
+                  color: ColorName.red,
                 ),
                 const GlobalCategoryCard(
                   title: 'Abilities',
-                  color: AppColors.blue,
+                  color: ColorName.blue,
                 ),
                 const GlobalCategoryCard(
                   title: 'Items',
-                  color: AppColors.yellow,
+                  color: ColorName.yellow,
                 ),
               ],
             ),
