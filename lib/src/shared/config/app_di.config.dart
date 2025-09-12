@@ -13,6 +13,8 @@ import 'package:get_it/get_it.dart' as _i174;
 import 'package:injectable/injectable.dart' as _i526;
 import 'package:shared_preferences/shared_preferences.dart' as _i460;
 
+import '../../features/pokelist/presentation/managers/pokelist_bloc.dart'
+    as _i595;
 import 'app_module.dart' as _i460;
 
 extension GetItInjectableX on _i174.GetIt {
@@ -26,13 +28,14 @@ extension GetItInjectableX on _i174.GetIt {
       environment,
       environmentFilter,
     );
-    final purpleCheckAppDiModule = _$PurpleCheckAppDiModule();
+    final appModules = _$AppModules();
     await gh.factoryAsync<_i460.SharedPreferences>(
-      () => purpleCheckAppDiModule.prefs,
+      () => appModules.prefs,
       preResolve: true,
     );
+    gh.factory<_i595.PokelistBloc>(() => _i595.PokelistBloc());
     return this;
   }
 }
 
-class _$PurpleCheckAppDiModule extends _i460.PurpleCheckAppDiModule {}
+class _$AppModules extends _i460.AppModules {}
