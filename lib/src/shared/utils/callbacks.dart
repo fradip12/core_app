@@ -3,8 +3,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:logging/logging.dart';
 
-import '../models/result.dart';
-import '../network/api_failure.dart';
+import '../models/base_results.dart';
 
 class Callbacks {
   static Future<Result<T>> executeWithTryCatch<T>({
@@ -14,13 +13,9 @@ class Callbacks {
       final result = await operation();
       return Result.ok(result);
     } on DioException catch (e) {
-      final failure = handleFailure(e);
-
-      final exception = Exception(failure.message);
-
-      Logger('DioException').warning(exception);
+      Logger('DioException').warning(e.toString());
       return Result.error(
-        exception,
+        Exception('DioException: ${e.toString()}'),
       );
     } on PlatformException catch (e) {
       debugPrint(e.toString());

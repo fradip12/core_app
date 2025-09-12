@@ -21,7 +21,7 @@ class _RootPageState extends State<RootPage> {
   Widget build(BuildContext context) {
     return AutoTabsScaffold(
       routes: <PageRouteInfo>[
-        const PokeListRoute(),
+        const HomeRoute(),
         const SampleRoute(),
         const SampleRoute(),
         const SampleRoute(),
@@ -65,25 +65,25 @@ class _RootNavBarState extends State<_RootNavBar> {
           _buildNavItem(
             activeIconPath: Assets.icons.icNavHomeActive.path,
             iconPath: Assets.icons.icNavHome.path,
-            label: 'Home',
+            label: 'Pokedex',
             index: 0,
           ),
           _buildNavItem(
             activeIconPath: Assets.icons.icNavNotificationActive.path,
             iconPath: Assets.icons.icNavNotification.path,
-            label: 'Notification',
+            label: 'Moves',
             index: 1,
           ),
           _buildNavItem(
             activeIconPath: Assets.icons.icNavReferralActive.path,
             iconPath: Assets.icons.icNavReferral.path,
-            label: 'Promo',
+            label: 'Evolution',
             index: 3,
           ),
           _buildNavItem(
             activeIconPath: Assets.icons.icNavProfileActive.path,
             iconPath: Assets.icons.icNavProfile.path,
-            label: 'Profile',
+            label: 'Me',
             index: 2,
           ),
         ],

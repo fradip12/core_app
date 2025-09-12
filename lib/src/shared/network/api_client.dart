@@ -19,9 +19,6 @@ class ApiClient {
       ErrorInterceptor(),
       PrettyDioLogger(
         requestHeader: true,
-        requestBody: true,
-        responseHeader: true,
-        error: true,
         responseBody: true,
       ),
     ]);

@@ -2,12 +2,10 @@ part of 'pokelist_bloc.dart';
 
 @freezed
 class PokelistState with _$PokelistState {
-  const factory PokelistState.initial() = _Initial;
-  const factory PokelistState.loading() = _Loading;
-  const factory PokelistState.loaded({
+  const factory PokelistState({
     List<PokeModels>? pokes,
-  }) = _Loaded;
-  const factory PokelistState.error({
+    GlobalManagerState? state,
+    @Default(1) int selectedIndex,
     String? message,
-  }) = _Error;
+  }) = _Loaded;
 }

@@ -85,3 +85,12 @@ extension SvgX on SvgGenImage {
     );
   }
 }
+
+extension OnTapX on Widget {
+  Widget onTap(VoidCallback? onTap) {
+    return InkWell(
+      onTap: onTap,
+      child: this,
+    );
+  }
+}

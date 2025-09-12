@@ -29,5 +29,5 @@ abstract class AppModules {
   @lazySingleton
   @Named('baseUrl')
   Future<String> get baseUrl =>
-      Future<String>.value('https://pokeapi.co/api/v2/');
+      Future<String>.value('https://68c3d67e81ff90c8e61a40eb.mockapi.io/v1/');
 }

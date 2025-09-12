@@ -1,6 +1,6 @@
 import 'package:injectable/injectable.dart';
 
-import '../../../shared/models/result.dart';
+import '../../../shared/models/base_results.dart';
 import '../../../shared/utils/callbacks.dart';
 import '../../models/poke/poke_models.dart';
 import '../../services/poke/poke_services.dart';
@@ -12,14 +12,11 @@ class PokeRepositoryImpl implements PokeRepository {
 
   PokeRepositoryImpl({required this.pokeServices});
   @override
-  Future<Result<List<PokeModels>>> getPokes({int? limit, int? offset}) {
+  Future<Result<List<PokeModels>>> getPokes() {
     return Callbacks.executeWithTryCatch<List<PokeModels>>(
       operation: () async {
-        final response = await pokeServices.getPokes(
-          limit: limit,
-          offset: offset,
-        );
-        return response.results ?? [];
+        final response = await pokeServices.getPokes();
+        return response;
       },
     );
   }

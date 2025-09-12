@@ -1,4 +1,5 @@
 /// Utility class to wrap result data.
+/// in order to replace fpdart packages
 sealed class Result<T> {
   const Result();
 
