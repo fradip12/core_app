@@ -6,7 +6,7 @@ ENV ?= dev
 # Run the application with specified environment
 run:
 	@echo "Running the projec..." ; \
-	fvm flutter run --flavor prod -t lib/main.dart; \
+	fvm flutter run; \
 
 l10n:
 	@echo "Generating the project..." ; \
@@ -19,7 +19,7 @@ generate:
 build:
 	@echo "Building the project ..." ; \
 	@echo "Building App Bundle..." ; \
-	fvm flutter build appbundle --flavor prod -t lib/main.dart ; \
+	fvm flutter build appbundle ; \
 	@echo "Building IPA..." ; \
-	fvm flutter build ipa --flavor prod -t lib/main.dart ; \
+	fvm flutter build ipa ; \
 	@echo "All builds completed ." ; \
