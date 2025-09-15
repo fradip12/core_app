@@ -169,3 +169,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Flutter team for the amazing framework
 - BLoC library contributors for excellent state management
 - Clean Architecture principles by Robert C. Martin
+
+
+## 📹 Demo
+
+https://github.com/user-attachments/assets/demo.mov
