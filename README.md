@@ -153,6 +153,12 @@ We welcome contributions! Please follow these guidelines:
 - Add documentation for public APIs
 - Use meaningful commit messages
 
+## 📹 Demo
+
+https://github.com/user-attachments/assets/686fd2ec-a0c1-4544-b49c-3dc522b6fc7d
+
+
+
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
@@ -170,7 +176,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - BLoC library contributors for excellent state management
 - Clean Architecture principles by Robert C. Martin
 
-
-## 📹 Demo
-
-https://github.com/user-attachments/assets/demo.mov
