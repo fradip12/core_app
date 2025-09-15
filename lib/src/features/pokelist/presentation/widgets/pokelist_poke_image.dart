@@ -1,7 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../data/models/poke/poke_models.dart';
+import '../../../../data/models/poke/dto/poke_models\.dart';
 import '../../../../shared/assets/assets.gen.dart';
 import '../../../../shared/extensions/ext_misc.dart';
 

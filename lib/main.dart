@@ -1,6 +1,6 @@
-import 'app.dart';
 import 'package:flutter/material.dart';
 
+import 'app.dart';
 import 'src/shared/config/app_di.dart';
 
 void main() {

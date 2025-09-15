@@ -2,7 +2,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:injectable/injectable.dart';
 
-import '../../../../data/models/poke/poke_models.dart';
+import '../../../../data/models/poke/dto/poke_models\.dart';
 import '../../../../data/repositories/poke/poke_repository.dart';
 import '../../../../shared/enum/global_manager_state.dart';
 import '../../../../shared/models/base_results.dart';

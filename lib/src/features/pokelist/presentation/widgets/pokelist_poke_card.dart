@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../../data/models/poke/poke_models.dart';
-import '../../../../data/models/poke/poke_types_enum.dart';
+import '../../../../data/models/poke/dto/poke_models\.dart';
+import '../../../../data/models/poke/enums/poke_types_enum.dart';
 import '../../../../shared/assets/assets.gen.dart';
 import '../../../../shared/extensions/ext_misc.dart';
 import 'pokelist_poke_image.dart';
@@ -150,9 +150,12 @@ class _PokemonBuild extends StatelessWidget {
       child: Stack(
         children: [
           if (pokemon.id != '#mock')
-            PokemonImage(
-              size: Size.square(pokemonSize),
-              pokemon: pokemon,
+            Hero(
+              tag: 'pokemon-${pokemon.id}',
+              child: PokemonImage(
+                size: Size.square(pokemonSize),
+                pokemon: pokemon,
+              ),
             ),
         ],
       ),

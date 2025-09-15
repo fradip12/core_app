@@ -30,4 +30,31 @@ abstract class AppModules {
   @Named('baseUrl')
   Future<String> get baseUrl =>
       Future<String>.value('https://68c3d67e81ff90c8e61a40eb.mockapi.io/v1/');
+
+  // @preResolve
+  // @singleton
+  // @Named('pokeBox')
+  // Future<Box<List<PokeModels>>> get pokeBox async {
+  //   return await Hive.openBox<List<PokeModels>>('pokes');
+  // }
 }
+
+// @module
+// abstract class HiveModule {
+//   @preResolve
+//   @singleton
+//   Future<void> initializeHive() async {
+//     // Initialize Hive with Flutter
+//     await Hive.initFlutter();
+
+//     // Register all adapters
+//     Hive.registerAdapter(PokeModelsAdapter());
+//   }
+
+//   @preResolve
+//   @singleton
+//   @Named('pokeBox')
+//   Future<Box<List<PokeModels>>> get pokeBox async {
+//     return await Hive.openBox<List<PokeModels>>('pokes');
+//   }
+// }

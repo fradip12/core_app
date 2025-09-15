@@ -2,7 +2,7 @@ import 'package:injectable/injectable.dart';
 
 import '../../../shared/models/base_results.dart';
 import '../../../shared/utils/callbacks.dart';
-import '../../models/poke/poke_models.dart';
+import '../../models/poke/dto/poke_models.dart';
 import '../../services/poke/poke_services.dart';
 import 'poke_repository.dart';
 

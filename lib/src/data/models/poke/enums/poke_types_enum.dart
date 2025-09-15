@@ -1,6 +1,6 @@
 import 'dart:ui';
 
-import '../../../shared/assets/colors.gen.dart';
+import '../../../../shared/assets/colors.gen.dart';
 
 enum PokemonTypes {
   grass('Grass', ColorName.lightGreen),

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../data/models/poke/poke_types_enum.dart';
+import '../../../../data/models/poke/enums/poke_types_enum.dart';
 
 class PokemonType extends StatelessWidget {
   const PokemonType(

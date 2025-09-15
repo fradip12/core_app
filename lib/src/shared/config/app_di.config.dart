@@ -1,4 +1,3 @@
-// dart format width=80
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
 // **************************************************************************
@@ -15,6 +14,9 @@ import 'package:get_it/get_it.dart' as _i174;
 import 'package:injectable/injectable.dart' as _i526;
 import 'package:shared_preferences/shared_preferences.dart' as _i460;
 
+import '../../data/datasources/poke_datasource.dart' as _i989;
+import '../../data/datasources/poke_local_datasource.dart' as _i59;
+import '../../data/datasources/poke_remote_datasource.dart' as _i671;
 import '../../data/repositories/poke/poke_repository.dart' as _i105;
 import '../../data/repositories/poke/poke_repository_impl.dart' as _i587;
 import '../../data/services/poke/poke_services.dart' as _i1037;
@@ -39,6 +41,7 @@ extension GetItInjectableX on _i174.GetIt {
       () => appModules.prefs,
       preResolve: true,
     );
+    gh.factory<_i59.LocalPokeDataSource>(() => _i59.LocalPokeDataSource());
     gh.lazySingleton<_i558.FlutterSecureStorage>(() => appModules.storage);
     gh.lazySingleton<_i455.SecureStorage>(() => appModules.dataStorage);
     gh.lazySingleton<_i361.Dio>(
@@ -56,8 +59,14 @@ extension GetItInjectableX on _i174.GetIt {
         ));
     gh.lazySingleton<_i105.PokeRepository>(() =>
         _i587.PokeRepositoryImpl(pokeServices: gh<_i1037.PokeServices>()));
+    gh.factory<_i671.RemotePokeDataSource>(() =>
+        _i671.RemotePokeDataSource(pokeServices: gh<_i1037.PokeServices>()));
     gh.factory<_i595.PokelistBloc>(
         () => _i595.PokelistBloc(gh<_i105.PokeRepository>()));
+    gh.lazySingleton<_i989.PokeDataSource>(() => _i989.PokeDataSourceImpl(
+          localDataSource: gh<_i59.LocalPokeDataSource>(),
+          remoteDataSource: gh<_i671.RemotePokeDataSource>(),
+        ));
     return this;
   }
 }

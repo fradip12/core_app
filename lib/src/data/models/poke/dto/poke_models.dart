@@ -2,7 +2,7 @@ import 'dart:ui';
 
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-import 'poke_types_enum.dart';
+import '../enums/poke_types_enum.dart';
 
 part 'poke_models.freezed.dart';
 part 'poke_models.g.dart';

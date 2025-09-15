@@ -23,7 +23,10 @@ class AppRouter extends RootStackRouter {
       AutoRoute(
         path: '/pokedex',
         page: PokelistRoute.page,
+        children: [],
       ),
+      AutoRoute(path: '/details', page: PokelistDetailsRoute.page),
+
       // Add more routes later.
     ];
   }
