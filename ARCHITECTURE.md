@@ -208,6 +208,20 @@ The architecture supports comprehensive testing:
 - **Integration Tests**: Feature flows
 - **BLoC Tests**: State management logic
 
+
+## Connecting App SDK Strategy
+
+This diagram illustrates a modular SDK architecture with the following structure:
+
+### Architecture Overview
+Two Application Layers: Main App and Second App, each contained within separate Meloz environments
+SDK Components: Three SDK modules that serve as the foundation for both applications
+Bidirectional Communication: Arrows indicate data flow and communication between components
+This architecture pattern is commonly used in enterprise applications where multiple apps need to share common functionality while maintaining separate deployment boundaries.
+
+<img width="1904" height="1973" alt="Untitled-2025-09-04-1340" src="https://github.com/user-attachments/assets/a34ee871-bd7f-480d-8e9b-91377bc5fc63" />
+
+
 ## Performance Considerations
 
 - **Image Caching**: Using cached_network_image for efficient image loading
