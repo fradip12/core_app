@@ -6,7 +6,8 @@ This Flutter application follows **Clean Architecture** principles with a simpli
 
 ## Architecture Layers
 
-![Architecture Diagram](architect.png)
+<img width="2635" height="1901" alt="architect" src="https://github.com/user-attachments/assets/79264a89-2e40-403d-a789-58d0816a45de" />
+
 
 This diagram illustrates the three-layer architecture of our Flutter application, showing the relationships between the Core, Data-Domain, and Feature layers, along with their key components and data flow.
 
